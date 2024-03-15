@@ -1,81 +1,84 @@
-version: 1.0
+version: "1.0"
+linter: jetbrains/qodana-php:2023.3
 profile:
-    name: qodana.recommended
+  name: qodana.recommended
 exclude:
-  - name: SyntaxError
-  - name: PhpPropertyNamingConventionInspection
-  - name: PhpClassNamingConventionInspection
-  - name: PhpMethodNamingConventionInspection
-  - name: PhpConstantNamingConventionInspection
-  - name: PhpVariableNamingConventionInspection
-  - name: PhpFunctionNamingConventionInspection
-  - name: GroovyInstanceVariableNamingConvention
-  - name: GroovyStaticMethodNamingConvention
-  - name: GroovyLocalVariableNamingConvention
+  - name: Annotator
+  - name: BooleanMethodNameMustStartWithQuestion
+  - name: ClassName
+  - name: ClassNamePrefixedWithPackageName
+  - name: ClassNameSameAsAncestorName
+  - name: ConfusingMainMethod
+  - name: ConstPropertyName
+  - name: DollarSignInName
+  - name: EnumEntryName
+  - name: ExceptionNameDoesntEndWithException
+  - name: FieldNamingConvention
+  - name: FunctionName
   - name: GroovyConstantNamingConvention
   - name: GroovyInstanceMethodNamingConvention
-  - name: NewGroovyClassNamingConvention
+  - name: GroovyInstanceVariableNamingConvention
+  - name: GroovyLocalVariableNamingConvention
   - name: GroovyParameterNamingConvention
+  - name: GroovyStaticMethodNamingConvention
   - name: GroovyStaticVariableNamingConvention
-  - name: PhpParameterNameChangedDuringInheritanceInspection
-  - name: PhpModifierOrderInspection
-  - name: PhpTraitsUseListInspection
-  - name: PhpMissingVisibilityInspection
-  - name: PhpLongTypeFormInspection
-  - name: PhpNewClassMissingParameterListInspection
-  - name: PhpSeparateElseIfInspection
-  - name: PhpCompoundNamespaceDepthInspection
-  - name: PhpVarUsageInspection
-  - name: LocalVariableName
-  - name: PackageName
-  - name: PrivatePropertyName
-  - name: FunctionName
-  - name: ObjectPropertyName
-  - name: ConstPropertyName
-  - name: PropertyName
-  - name: EnumEntryName
-  - name: ClassName
-  - name: TestFunctionName
-  - name: PhpMissingDocCommentInspection
-  - name: LambdaParameterNamingConvention
-  - name: ParameterNameDiffersFromOverriddenParameter
   - name: JavaModuleNaming
-  - name: OverloadedVarargsMethod
-  - name: NonExceptionNameEndsWithException
-  - name: OverloadedMethodsWithSameNumberOfParameters
-  - name: MisspelledMethodName
-  - name: MethodNameSameAsClassName
-  - name: LocalVariableNamingConvention
-  - name: ClassNamePrefixedWithPackageName
-  - name: ConfusingMainMethod
-  - name: PackageNamingConvention
-  - name: FieldNamingConvention
-  - name: NewClassNamingConvention
-  - name: BooleanMethodNameMustStartWithQuestion
-  - name: StandardVariableNames
-  - name: NewMethodNamingConvention
-  - name: ExceptionNameDoesntEndWithException
-  - name: DollarSignInName
-  - name: UpperCaseFieldNameNotConstant
-  - name: ParameterNamingConvention
-  - name: MethodNameSameAsParentName
-  - name: QuestionableName
+  - name: LambdaParameterNamingConvention
   - name: LambdaUnfriendlyMethodOverload
+  - name: LocalVariableName
+  - name: LocalVariableNamingConvention
+  - name: MethodNameSameAsClassName
+  - name: MethodNameSameAsParentName
+  - name: MisspelledMethodName
+  - name: NewClassNamingConvention
+  - name: NewGroovyClassNamingConvention
+  - name: NewMethodNamingConvention
   - name: NonBooleanMethodNameMayNotStartWithQuestion
-  - name: ClassNameSameAsAncestorName
+  - name: NonExceptionNameEndsWithException
+  - name: ObjectPropertyName
+  - name: OverloadedMethodsWithSameNumberOfParameters
+  - name: OverloadedVarargsMethod
+  - name: PackageName
+  - name: PackageNamingConvention
+  - name: ParameterNameDiffersFromOverriddenParameter
+  - name: ParameterNamingConvention
+  - name: PhpClassNamingConventionInspection
+  - name: PhpCompoundNamespaceDepthInspection
+  - name: PhpConstantNamingConventionInspection
+  - name: PhpFunctionNamingConventionInspection
   - name: PhpIncludeInspection
-  - name: PhpUsageOfSilenceOperatorInspection
+  - name: PhpLongTypeFormInspection
+  - name: PhpMethodNamingConventionInspection
+  - name: PhpMissingDocCommentInspection
+  - name: PhpMissingVisibilityInspection
+  - name: PhpModifierOrderInspection
+  - name: PhpNewClassMissingParameterListInspection
+  - name: PhpParameterNameChangedDuringInheritanceInspection
+  - name: PhpPossiblePolymorphicInvocationInspection
+  - name: PhpPropertyNamingConventionInspection
+  - name: PhpSeparateElseIfInspection
+  - name: PhpTraditionalSyntaxArrayLiteralInspection
+  - name: PhpTraitsUseListInspection
+  - name: PhpUndefinedCallbackInspection
+  - name: PhpUndefinedClassConstantInspection
+  - name: PhpUndefinedClassInspection
+  - name: PhpUndefinedConstantInspection
+  - name: PhpUndefinedFieldInspection
   - name: PhpUndefinedFunctionInspection
+  - name: PhpUndefinedGotoLabelInspection
+  - name: PhpUndefinedMethodInspection
   - name: PhpUndefinedNamespaceInspection
   - name: PhpUndefinedVariableInspection
-  - name: PhpUndefinedFieldInspection
-  - name: PhpUndefinedGotoLabelInspection
-  - name: PhpPossiblePolymorphicInvocationInspection
-  - name: PhpUndefinedConstantInspection
-  - name: PhpUndefinedClassConstantInspection
-  - name: PhpUndefinedCallbackInspection
-  - name: PhpUndefinedMethodInspection
-  - name: PhpUndefinedClassInspection
-  - name: PhpTraditionalSyntaxArrayLiteralInspection
+  - name: PhpUsageOfSilenceOperatorInspection
+  - name: PhpVariableNamingConventionInspection
   - name: PhpVariableVariableInspection
-  - name: Annotator
+  - name: PhpVarUsageInspection
+  - name: PrivatePropertyName
+  - name: PropertyName
+  - name: QuestionableName
+  - name: StandardVariableNames
+  - name: SyntaxError
+  - name: TestFunctionName
+  - name: UpperCaseFieldNameNotConstant
+include:
+  - name: CheckDependencyLicenses
